@@ -20,7 +20,7 @@ public class ToKillDragonMovieTest extends BaseTest {
 
     @Parameter
     public String actorLink;
-
+    // @Parameterized function which appears to run before @BeforeClass setup()
     @Parameters(name = "{index}: actor link {0}")
     public static Iterable<String> prepareData() {
         ArticlePage articlePage = new ArticlePage();
