@@ -7,6 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseTest {
 
+     /**
+     * I use this because @parameters method is executed before @beforeclass method.
+     * https://stackoverflow.com/questions/11430859/parameters-method-is-executed-before-beforeclass-method
+     */
     static {
         setUp();
     }
